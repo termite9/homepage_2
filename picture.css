@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+
+}
+
+.picture-me {
+    width: 1140px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+
+}
+
+
+.picture-inner {
+    width: 20%;
+    height: auto;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
+    background-color: #bee5c0;
+    border: 3px solid #ccc;
+    cursor: pointer;
+    padding: rgb(218, 216, 216);
+}
+
+/* section.picture .picture-inner:nth-child(3n) {
+    margin-right: 0;
+}
+ */
+section.picture .picture-inner img {
+    width: 100%;
+    display: block;
+}
+
+section .picture .picture-inner strong {
+    color: #ff6a6a;
+    margin: 0.5rem 0;
+    display: block;
+}
+
+section .picture .picture-inner h3 {
+    font-size: 1rem;
+}
+
+section .picture-inner:hover {
+    background-color: rgb(145, 232, 154);
+    /* color: blue;  */
+}
+
+
+/* section .picture-me .picture-inner:hover {
+    background-color: lightcoral;
+    border: #ff6a6a;
+    
+    color: blue;
+} */

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Varela+Round&display=swap');
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #9f8e8e;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #d1cfcf;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    background-color: rgb(247, 236, 223);
+
+}
+
+button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    background-attachment: fixed;
+}
+
+#diaryOutput {
+
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    padding: 10px;
+    margin: 0 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#diary_scroll {
+    width: 90%;
+    height: 100vh;
+    background-color: #fff;
+    padding: 10px;
+    margin: 0 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow-y: scroll;
+    /* 세로 스크롤바 활성화 */
+    max-height: 600px;
+    /* 스크롤바가 보여지는 최대 높이를 설정할 수 있습니다. */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* 이전의 스타일 코드 유지 */
+
+#editButton {
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#editButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.container img:hover {
+    transform: scale(2, 2);
+
+}
+
+.change {
+    animation-name: img_change;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes img_change {
+    0% {
+        transform: skewX(5deg);
+    }
+
+    15% {
+        transform: skewX(10deg);
+    }
+
+    30% {
+        transform: skewX(5deg);
+    }
+
+    45% {
+        transform: skewX(0deg, 5deg);
+    }
+
+    60% {
+        transform: skewX(-5deg);
+    }
+
+    75% {
+        transform: skewX(-10deg);
+    }
+
+    90% {
+        transform: skewX(-5deg);
+    }
+}
+
+header {
+    position: fixed;
+    color: white;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px bold #ff6a6a;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid rgb(61, 26, 199);
+}
+
+
+header h2 {
+    font-size: 1rem;
+    margin-left: 0;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    padding: 10px;
+}
+
+header button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    color: white;
+}
+
+header h1 button {
+    font-size: 2.0rem;
+    font-weight: bold;
+}
+
+header nav ul li button {
+    font-size: 1.2rem;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background: linear-gradient(rgba(43, 99, 136, 0.8), rgba(0, 0, 0, 0.8)),
+        url('') center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* animation-name: background_change;
+    animation-duration: 20s;
+    animation-fill-mode: both; */
+}
+
+@keyframes background_change {
+    25% {
+        background: linear-gradient(rgb(151, 150, 195), rgb(126, 88, 88));
+    }
+
+    50% {
+        background: linear-gradient(rgb(51, 50, 126), rgb(145, 116, 116));
+    }
+
+    75% {
+        background: linear-gradient(rgb(45, 44, 115), rgb(173, 155, 155));
+    }
+
+    100% {
+        background: linear-gradient(rgb(12, 10, 132), rgb(207, 201, 201));
+    }
+}
+
+main h4 {
+    font-size: 2rem;
+}
+
+main h2 {
+    font-size: 2.5rem;
+    color: antiquewhite;
+    margin: 2rem 0;
+    letter-spacing: 3px;
+    font-family: "Yeon Sung" "Varela Round", sans-serif;
+}
+
+main p {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+}
+
+main .container>img {
+    width: 40px;
+    height: 60px;
+    margin-bottom: 5px;
+}
+
+
+main .main-social button {
+    background-color: transparent;
+    /* border: 3px solid white; */
+    /* border-radius: 20px; */
+    padding: 2px;
+    margin-top: 0px;
+    margin: 10px;
+    color: white;
+    font-weight: lighter;
+    cursor: pointer;
+
+}
+
+
+@keyframes upDown {
+    0% {
+        bottom: 1rem;
+    }
+
+    50% {
+        bottom: 1.5rem;
+    }
+
+    100% {
+        bottom: 1rem;
+    }
+}
+
+main h2 span::after {
+    content: "";
+    height: 40px;
+    width: 3px;
+    background-color: #fff;
+    display: inline-block;
+    animation: blink .7s ease-in-out infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+section {
+    font-family: 'Nanum Gothic', Poppins, sans-serif;
+    padding: 5rem 0;
+    box-sizing: border-box;
+
+}
+
+section:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+
+section .title {
+    margin-bottom: 3rem;
+}
+
+section .title h4 {
+    font-size: 1.35rem;
+    color: #ed4848;
+    position: relative;
+}
+
+section .title h2 {
+    font-size: 3.5rem;
+}
+
+section .title p {
+    font-size: 1.15rem;
+}
+
+section .about-self::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+section .about-self .left {
+    width: 50%;
+    float: left;
+}
+
+section .about-self .left img {
+    max-width: 100%;
+}
+
+section .about-self .right {
+    width: 50%;
+    float: left;
+    padding: 0 2rem;
+}
+
+section.about-self .right h3 {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+section .about-self .right h3 strong {
+    color: #ed4848;
+}
+
+
+section .about-self .right p {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+section .about-self .right .social a {
+    font-size: 2.25rem;
+    margin-right: 0.2rem;
+}
+
+/*float 속성 해제*/
+section .do-me::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section .do-me .do-inner {
+    background-color: #fff;
+    width: 30%;
+    padding: 2rem;
+    float: left;
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+section .do-me .do-inner:last-child {
+    margin-right: 0;
+}
+
+section .do-me .do-inner .icon {
+    font-size: 2.5rem;
+    color: #ff6a6a;
+}
+
+section .do-me .do-inner .content h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+section .do-me .do-inner .content p {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1.5rem;
+}
+
+section .do-me .do-inner:hover {
+    background-color: lightcoral;
+    color: white;
+
+}
+
+section .do-me .do-inner:hover i {
+    color: white;
+}
+
+.bg {
+    background: url('/images/background.jpg')center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 650px;
+}
+
+section.contact .contact-me::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section.contact .contact-me .left {
+    width: 30%;
+    float: left;
+}
+
+section.contact .contact-me .right {
+    float: left;
+    width: 65%;
+    margin-left: 5%;
+}
+
+section.contact .contact-me .left .card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+section.contact .contact-me .left .card .icon i {
+    font-size: 2rem;
+    margin-right: 15px;
+}
+
+section.contact .contact-me .right {
+    float: left;
+    width: 65%;
+    margin-left: 5%;
+    margin-bottom: 2rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+section.contact .contact-me .right .form-group {
+    margin-bottom: 1.25rem;
+}
+
+section.contact .contact-me .right .form-group label {
+    display: block;
+    margin-bottom: 0.85rem;
+}
+
+section.contact .contact-me .right .form-group input {
+    padding: 0.625rem;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+section.contact .contact-me .right .form-group input:focus {
+    border: 1px solid #719ece;
+    box-shadow: 0 0 10px #719ece;
+}
+
+section.contact .contact-me .right .form-group textarea {
+    height: 300px;
+    width: 100%;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+section.contact .contact-me .right .form-group textarea:focus {
+    border: 1px solid #719ece;
+    box-shadow: 0 0 10px #719ece;
+    outline: none;
+}
+
+section.contact .contact-me .right button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #f78b00;
+    border: none;
+    color: white;
+}
+
+@media screen and (max-width:1140px) {
+    main .container {
+        width: 992px;
+    }
+
+    section .container {
+        width: 600px;
+    }
+
+    section .about-self .left {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    section .about-self .right {
+        width: 100%;
+        padding: 0;
+    }
+
+    section .do-me .do-inner:nth-child(2n+1) {
+        margin-right: 4%;
+        /* 1, 3, 5...번째 본문 사각형에 margin-right 4% 적용 */
+    }
+
+    /* picture 영역의 콘텐츠 박스 너비를 30% ->  48% 변경 */
+    section .picture-me .picture-inner {
+        width: 48%;
+        margin-right: 0;
+    }
+
+    section .picture-me .picture-inner:nth-child(2n+1) {
+        margin-right: 4%;
+    }
+
+    /* Contact With Me 영역 */
+    section.contact .contact-me .left {
+        width: 100%;
+        /* 너비 변경 30% -> 100% */
+    }
+
+    section.contact .contact-me .right {
+        width: 100%;
+        /* 너비 변경 65% -> 100% */
+        margin-left: 0;
+        /* margin 초기화 */
+
+    }
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+
+    /* 메인 영역 container 기준 너비 변경 */
+    main .container {
+        width: 768px;
+        /* 992px -> 768px */
+    }
+
+    /* picture 영역 */
+    section .picture-me .picture-inner {
+        width: 100%;
+        /* 48% -> 100% 변경 */
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 13px;
+    }
+
+    /* 메인 영역 container 기준 너비 변경 */
+    main .container {
+        width: 576px;
+        /* 768px -> 576px */
+    }
+
+    section .container {
+        width: 400px;
+        /* 600px -> 400px */
+    }
+
+    section .do-me .do-inner {
+        width: 100%;
+        /* 48% -> 100% */
+        margin-right: 0;
+        /* margin 초기화 */
+    }
+}
+
+@media (max-width: 576px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    main .container {
+        width: 400px;
+        /* 576px -> 400px */
+    }
+
+    section .container {
+        width: 360px;
+        /* 400px -> 360px */
+    }
+}
+
+@media (max-width: 400px) {
+
+    html {
+        font-size: 11px;
+    }
+
+    main .container {
+        width: 320px;
+        /* 400px -> 320px */
+    }
+
+    main h4 {
+        font-size: 1.5rem;
+    }
+
+    section .container {
+        width: 320px;
+        /* 360px -> 320px */
+    }
+
+    section .title h2 {
+        font-size: 3rem;
+        /* 3.5rem -> 3rem */
+    }
+}
+
+/* End media.css */
+background-color:rgba(0, 0, 0);
+
+    {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+header.active {
+    background-color: rgba(0, 0, 0);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
